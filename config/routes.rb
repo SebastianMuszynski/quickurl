@@ -2,6 +2,7 @@ Quickurl::Application.routes.draw do
 
   root :to => "urls#index"
   post "urls/create" => "urls#create"
+  get "/:random_hash" => "urls#redirect"
   
   # The priority is based upon order of creation:
   # first created -> highest priority.

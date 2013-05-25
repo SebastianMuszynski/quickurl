@@ -13,5 +13,7 @@ class UrlsController < ApplicationController
   end
 
   def redirect
+    @url = Url.where(random_hash: params[:random_hash]).first
+    redirect_to @url.source
   end
 end
