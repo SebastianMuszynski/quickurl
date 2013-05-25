@@ -1,12 +1,7 @@
 Quickurl::Application.routes.draw do
 
-  get "urls/index"
-
-  get "urls/create"
-
-  get "urls/redirect"
-
   root :to => "urls#index"
+  post "urls/create" => "urls#create"
   
   # The priority is based upon order of creation:
   # first created -> highest priority.

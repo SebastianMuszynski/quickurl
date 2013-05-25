@@ -15,9 +15,9 @@ ActiveRecord::Schema.define(:version => 20130525210542) do
 
   create_table "urls", :force => true do |t|
     t.string   "source"
-    t.string   "hash"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.string   "random_hash"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
 end
