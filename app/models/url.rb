@@ -1,6 +1,7 @@
 class Url < ActiveRecord::Base
   attr_accessible :source, :random_hash
   before_validation :add_url_protocol
+  validates_presence_of :source
 
   def self.generate_random_hash
     begin

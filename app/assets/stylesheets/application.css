@@ -11,3 +11,84 @@
  *= require_self
  *= require_tree .
  */
+
+body {
+  font-family: 'Patrick Hand SC', cursive;
+  font-size: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+
+#main {
+  width: 960px;
+  margin: 0 auto;
+}
+
+#content {
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+#title {
+  background-color: #B9C120;
+  color: #fff;
+  font-size: 2em;
+  font-weight: bold;
+  padding: 20px;
+  text-shadow: 1px 1px #000;
+}
+
+#logo {
+  margin-left: 20px;
+}
+
+#new_url {
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.input {
+  display: inline;
+}                                                                                                                                     
+
+span.ready_quickurl {
+  text-shadow: 1px 1px #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+a.button, input.button {
+  background-color: #B9C120;
+  border-radius: 15px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 30px;
+  padding: 5px 15px;
+}
+
+a.button:hover, input.button:hover {
+  background-color: #A8AE28;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+}
+
+input#url_source {
+  margin-left: 10px;
+  padding: 5px;
+  width: 75%;
+}
+
+label[for="url_source"] {
+  display: none;
+}
+
+footer {
+  bottom: 10px;
+  color: #619D9B;
+  font-family: sans-serif;
+  font-size: 10px;
+  position: absolute;
+  right: 10px;
+}
+

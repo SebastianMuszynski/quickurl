@@ -1,2 +1,4 @@
-<h1>Urls#create</h1>
-<p>Find me in app/views/urls/create.html.erb</p>
+<span class="ready_quickurl">
+  Your quickurl <%= link_to "#{request.host}:#{request.port}/" + @url.random_hash, "http://#{request.host}:#{request.port}/" + @url.random_hash %> is ready!
+</span>
+<%= link_to "↺", :root, class: "button" %>

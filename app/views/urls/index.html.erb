@@ -1,5 +1,4 @@
-<h1>Quick and easy way to short your url!</h1>
 <%= simple_form_for(@url, :url => {:controller => 'urls', :action => 'create'}) do |f| %>
   <%= f.input :source %>
-  <%= f.button :submit, "Do it!" %>
+  <%= f.button :submit, "SHORT MY URL!" %>
 <% end %>

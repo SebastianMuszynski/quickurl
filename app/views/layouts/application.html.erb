@@ -5,10 +5,18 @@
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+  <link href='http://fonts.googleapis.com/css?family=Patrick+Hand+SC' rel='stylesheet' type='text/css'>
 </head>
 <body>
+  <div id="main">
+    <section id="title">
+      Quick and easy way to short your url! <span id="logo"><%= image_tag("bolt.png") %></span>
+    </section>
 
-<%= yield %>
-
+    <section id="content">
+      <%= yield %>
+    </section>
+  </div>
+  <footer>author: Sebastian Muszyński</footer>
 </body>
 </html>
